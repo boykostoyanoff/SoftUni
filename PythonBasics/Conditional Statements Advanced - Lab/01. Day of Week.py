@@ -1,18 +1,16 @@
 day_of_the_week = input()
 
-if day_of_the_week == 'Monday':
-    print('Working day')
-elif day_of_the_week == 'Tuesday':
-    print('Working day')
-elif day_of_the_week == 'Wednesday':
-    print('Working day')
-elif day_of_the_week == 'Thursday':
-    print('Working day')
-elif day_of_the_week == 'Friday':
-    print('Working day')
-elif day_of_the_week == 'Saturday':
-    print('Weekend')
-elif day_of_the_week == 'Sunday':
-    print('Weekend')
-else:
-    print('Error')
+if day_of_the_week == 1:
+    print('Monday')
+elif day_of_the_week == 2:
+    print('Tuesday')
+elif day_of_the_week == 3:
+    print('Wednesday')
+elif day_of_the_week == 4:
+    print('Thursday')
+elif day_of_the_week == 5:
+    print('Friday')
+elif day_of_the_week == 6:
+    print('Saturday')
+elif day_of_the_week == 7:
+    print('Sunday')
