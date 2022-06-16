@@ -10,11 +10,17 @@ diff_time = exam_in_minute - arrive_in_minute
 
 if diff_time < 0:
     print('Late')
-elif 30 <= diff_time <= 0:
+elif 0 <= diff_time <= 30:
     print('On time')
-elif diff_time <= 60:
+elif diff_time > 30:
     print('Early')
-    arrive_hour = diff_time // 60
-    arrive_minute = diff_time % 60
-    print(f'{arrive_hour}:{arrive_minute:02} hours before the start')
 
+
+if diff_time <= -60:
+    print(f'{(diff_time * -1) // 60}:{(diff_time * -1 % 60):02} hours after the start')
+elif -60 < diff_time < 0:
+    print(f'{diff_time * -1} minutes after the start')
+elif 0 <= diff_time < 60:
+    print(f'{diff_time} minutes before the start')
+elif diff_time >= 60:
+    print(f'{(diff_time // 60)}:{(diff_time % 60):02} hours before the start')
