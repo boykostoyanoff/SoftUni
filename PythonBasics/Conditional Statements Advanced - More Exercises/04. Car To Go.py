@@ -24,12 +24,8 @@ elif budget <= 500:
         car_price = budget * 0.80
 else:
     car_class_type = 'Luxury class'
-    if season == 'Summer':
-        car_type = 'Cabrio'
-        car_price = budget * 0.90
-    else:
-        car_type = 'Jeep'
-        car_price = budget * 0.90
+    car_type = 'Jeep'
+    car_price = budget * 0.90
 
 print(car_class_type)
 print(f'{car_type} - {car_price:.2f}')
