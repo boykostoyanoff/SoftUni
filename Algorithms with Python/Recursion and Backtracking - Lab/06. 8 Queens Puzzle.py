@@ -3,7 +3,6 @@ def n_queen(n):
     positive_diagonals = set()
     negative_diagonals = set()
 
-    result = []
     board = []
     [board.append(['-'] * 8) for _ in range(q)]
 
